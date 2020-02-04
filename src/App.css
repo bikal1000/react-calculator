@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body {
+	min-width: 700px;
+	background: #f94e3f;
+	color: #272932;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calcWrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calcWrapper .case {
+	width: 450px;
+	background: #37352b;
+	border: 1px solid #272932;
+	border-radius: 2px;
+	text-align: center;
+	padding-bottom: 15px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calcWrapper .case p {
+	text-align: center;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 38px;
+	color: #0bdca8;
+	margin: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.calcWrapper .case .inputField {
+	width: 380px;
+	font-size: 30px;
+	padding: 5px 15px 5px 0;
+	text-align: right;
+	margin-bottom: 5px;
+	border: 1px solid #0bdca8;
+	background: #59656f;
+	color: #272932;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calcWrapper .case .calcUI {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	space-between: space-between;
+	justify-content: center;
+}
+.calcWrapper .case .calcUI button {
+	width: 100px;
+	height: 100px;
+	border: 1px solid #272932;
+	background: #fff1b9;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+}
+.calcWrapper .case .calcUI button:hover {
+	background: #67d5b5;
+	color: #272932;
+	cursor: pointer;
+}
+.calcWrapper .case .calcUI .delBtn {
+	font-size: 30px;
+}
+.calcWrapper .case .calcUI .clearBtn {
+	font-size: 35px;
+}
+.calcWrapper .case .calcUI .delBtn:hover,
+.calcWrapper .case .calcUI .clearBtn:hover {
+	background: #ff7473;
+}
+.calcWrapper .case .calcUI .operationBtn:hover {
+	background: #bebebe;
+}
+.calcWrapper .case .calcUI button:focus {
+	z-index: 3;
+}
+.calcWrapper .case .enterBtn {
+	width: 400px;
+	height: 100px;
+	border: 1px solid #272932;
+	background: #67d5b5;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 35px;
+}
+.calcWrapper .case .enterBtn:hover {
+	background: #0bdca8;
+	cursor: pointer;
 }
